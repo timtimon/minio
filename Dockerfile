@@ -7,4 +7,5 @@ RUN mkdir -p /mnt/minio/data && \
     mkdir -m 777 /minio
 ENV MINIO_ACCESS_KEY capriciousduck
 ENV MINIO_SECRET_KEY Duckisgood25#
+ENV MINIO_BROWSER=off
 CMD /entrypoint.sh
