@@ -5,6 +5,6 @@ ADD entrypoint.sh /entrypoint.sh
 RUN mkdir -p /mnt/minio/data && \
     chmod +x /entrypoint.sh && \
     mkdir -m 777 /minio
-ENV MINIO_ACCESS_KEY capriciousduck
-ENV MINIO_SECRET_KEY Duckisgood25#
+ENV MINIO_ACCESS_KEY minio
+ENV MINIO_SECRET_KEY minio123
 CMD /entrypoint.sh
