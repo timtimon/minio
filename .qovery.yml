@@ -1,0 +1,16 @@
+---
+application:
+  name: "minio"
+  project: "timtimon"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "disk"
+    size: "500"
+    type: "slow_hdd"
+    mount_point: "/mnt/minio/data"
+routers:
+- name: "main-minio"
+  routes:
+  - application_name: "minio"
+    paths:
+    - "/*"
